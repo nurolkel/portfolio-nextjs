@@ -22,7 +22,7 @@ const PortfolioItems = ({ portfolio }) => {
     return (
         <>
             <BreadCrumbs page={name} />
-            <PortfolioComponent name={name} id={_id} slug={slug.current} skill={skills} text={text} description={description} github={github} url={url} image={image}/>
+            <PortfolioComponent name={name} key={_id} slug={slug.current} skill={skills} text={text} description={description} github={github} url={url} image={image}/>
         </>
     );
 }
@@ -44,7 +44,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: true
+        fallback: false
     }
 }
 
