@@ -22,7 +22,7 @@ const PortfolioItems = ({ portfolio }) => {
     return (
         <>
             <BreadCrumbs page={name} />
-            <PortfolioComponent title={name} id={_id} slug={slug.current} skill={skills} text={text} description={description} github={github} url={url} image={image}/>
+            <PortfolioComponent name={name} id={_id} slug={slug.current} skill={skills} text={text} description={description} github={github} url={url} image={image}/>
         </>
     );
 }

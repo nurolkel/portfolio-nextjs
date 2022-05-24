@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 
 
-const PortfolioComponent = ({ title, text, image, github, url, description, skill, slug, _id, route }) => {
+const PortfolioComponent = ({ name, text, image, github, url, description, skill, slug, _id, route }) => {
 
     const router = useRouter();
    
@@ -19,11 +19,11 @@ const PortfolioComponent = ({ title, text, image, github, url, description, skil
             <div className="flex-item--portfolio">
                 <Link href={route === "home" ? `${`projects/${slug}`}` : `${`${router.asPath}`}`}>
                     <a className="img-link">
-                        <Image src={urlFor(image).url()} alt={title} layout="fill" className="img--portfolio"/>
+                        <Image src={urlFor(image).url()} alt={name} layout="fill" className="img--portfolio"/>
                     </a>
                 </Link>
                 <div className="padding-inline">
-                    <h3 className="letter-spacing-3 text-blue fs-700 uppercase padding-top-bottom">{title}<span className="d-block text-white letter-spacing-2 padding-top-bottom fs-400">{description}</span></h3>
+                    <h3 className="letter-spacing-3 text-blue fs-700 uppercase padding-top-bottom">{name}<span className="d-block text-white letter-spacing-2 padding-top-bottom fs-400">{description}</span></h3>
                     <div className="padding-inline flex">
                         <a href={github} target="_blank" rel="noreferrer"><span className="sr-only">Github Link</span><BsGithub className="icons text-purple"/></a>
                         <a href={url} target="_blank" rel="noreferrer"><span className="sr-only">Netlify Link</span><SiNetlify className="icons text-purple" /></a>

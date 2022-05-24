@@ -47,7 +47,7 @@ export default function Home({  myInfo, myHobbies, myPortfolio }) {
     <>
       <GridWrapper className="padding-main flow flow--space-medium">
           <div className="grid-item flow padding-inline--small">
-            <h1 className="text-center letter-spacing-3 text-blue fs-700 uppercase">Hi, I'm Kelvin<span className="d-block text-white fs-500 margin-top-bottom">Frontend Web Developer</span></h1>
+            <h1 className="text-center letter-spacing-3 text-blue fs-700 uppercase">Hi, I&rsquo;m Kelvin<span className="d-block text-white fs-500 margin-top-bottom">Frontend Web Developer</span></h1>
             <p className="fs-400 letter-spacing-3 text-light-grey ">I am a self taught web developer. I like writing code that is easy to understand, performant, and maintainable.</p>
             <ReachMe />
             <div className="icon-container flex flex--gap ">
@@ -196,7 +196,7 @@ export default function Home({  myInfo, myHobbies, myPortfolio }) {
             {myPortfolio.map((portfolio, index) => {
               const { name, url, github, text, description, skills, slug, image, _id} = portfolio;
               return (index < 3 &&
-                <PortfolioComponent route="home" key={_id} title={name} url={url} github={github} description={description} skill={skills} text={text} image={image} slug={slug.current} />
+                <PortfolioComponent route="home" key={_id} name={name} url={url} github={github} description={description} skill={skills} text={text} image={image} slug={slug.current} />
               )
             })}
             <div className="flex">
