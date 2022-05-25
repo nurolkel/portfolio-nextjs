@@ -21,5 +21,6 @@ const Meta = ({title, keywords, description, ogTitle, ogType, ogUrl, ogImage}) =
      keywords: "frontend web developer, software engineer, full stack, javascript, html, css, nextjs, nodejs, self taught web developer",
      description: "Kelvin's Portfolio Project showcasing recent projects",
      ogTitle: "Frontend Web Developer",
+     ogUrl: "http://knportfolio.dev"
  }
 export default Meta;
