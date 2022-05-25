@@ -4,7 +4,7 @@ import MessageComponent from "../components/message";
 import Loading from "../components/loading";
 import { ContactContainer } from "../styles/container.styles";
 import ReachMe from "../components/reachme";
-
+import Meta from "../components/meta";
 
 const ContactPage = () => {
     
@@ -35,7 +35,7 @@ const ContactPage = () => {
 
     return (
         <>
-        
+        <Meta title="Kelvin's Portfolio | Contact" />
         <ContactContainer>
             <div>
                 <h1 className="text-blue text-center padding-top-bottom">Contact Page</h1>

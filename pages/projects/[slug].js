@@ -2,7 +2,7 @@ import groq from "groq";
 import PortfolioComponent from "../../components/portfolio";
 import BreadCrumbs from "../../components/breadcrumbs";
 import { getClient } from "../../lib/sanity.server";
-
+import Meta from "../../components/meta";
 const portfolioQuery = `*[_type == "portfolio" && slug.current == $slug][0]{
     name,
     url,
@@ -21,8 +21,9 @@ const PortfolioItems = ({ portfolio }) => {
 
     return (
         <>
+            <Meta title={`Kelvin's Portfolio | ${name}`} />
             <BreadCrumbs page={name} />
-            <PortfolioComponent name={name} key={_id} slug={slug.current} skill={skills} text={text} description={description} github={github} url={url} image={image}/>
+            <PortfolioComponent name={name} slug={slug.current} skill={skills} text={text} description={description} github={github} url={url} image={image}/>
         </>
     );
 }

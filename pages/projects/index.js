@@ -4,7 +4,7 @@ import Image from "next/image";
 import { urlFor } from "../../lib/sanity";
 import groq from "groq";
 import { getClient } from "../../lib/sanity.server";
-
+import Meta from "../../components/meta";
 
 
 const portfolioQuery = `*[_type == "portfolio"]{
@@ -18,7 +18,7 @@ const ProjectPage = ({ myPortfolio }) => {
 
     return (
         <>
-            
+            <Meta title="Kelvin's Portfolio | Portfolio Page" />
             <h1 className="text-blue text-center uppercase letter-spacing-2 padding-top-bottom fs-650">Projects Page</h1>
             <ProjectsGrid>
                 {myPortfolio.map(element => {

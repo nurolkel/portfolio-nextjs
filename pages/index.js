@@ -4,6 +4,7 @@ import Link from "next/link";
 import { GridWrapper, ImgGallery, IconGrid, ImageWrapper } from "../styles/container.styles"
 import ReachMe from "../components/reachme";
 import PortfolioComponent from "../components/portfolio";
+import Meta from "../components/meta";
 // Utils
 import { urlFor } from "../lib/sanity";
 import { getClient } from "../lib/sanity.server";
@@ -45,6 +46,7 @@ export default function Home({  myInfo, myHobbies, myPortfolio }) {
 
   return (
     <>
+      <Meta title="Kelvin's Portfolio | Home" />
       <GridWrapper className="padding-main flow flow--space-medium">
           <div className="grid-item flow padding-inline--small">
             <h1 className="text-center letter-spacing-3 text-blue fs-700 uppercase">Hi, I&rsquo;m Kelvin<span className="d-block text-white fs-500 margin-top-bottom">Frontend Web Developer</span></h1>

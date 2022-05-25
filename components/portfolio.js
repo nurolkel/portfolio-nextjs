@@ -10,12 +10,12 @@ import { useRouter } from "next/router";
 
 
 
-const PortfolioComponent = ({ name, text, image, github, url, description, skill, slug, key, route }) => {
+const PortfolioComponent = ({ name, text, image, github, url, description, skill, slug, route }) => {
 
     const router = useRouter();
    
     return (
-        <WrapperPortfolio key={key} className="padding-top-bottom">
+        <WrapperPortfolio  className="padding-top-bottom">
             <div className="flex-item--portfolio">
                 <Link href={route === "home" ? `${`projects/${slug}`}` : `${`${router.asPath}`}`}>
                     <a className="img-link">
