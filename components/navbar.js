@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { breakpoints } from "../lib/breakpoints";
@@ -47,6 +47,7 @@ const Navbar = () =>  {
     
     const [open, setOpen] = useState(false);
     const [background, setBackground] = useState(false);
+    const ref = useRef(null);
 
     const changeBackground = () => {
         if (window.scrollY > 25) {
@@ -57,6 +58,8 @@ const Navbar = () =>  {
     }
 
     const toggleNavBar = () => setOpen(open => !open);
+
+    
 
     useEffect(() => {
         window.addEventListener('scroll', changeBackground)
@@ -73,8 +76,22 @@ const Navbar = () =>  {
 
     },[open])
 
+    useEffect(() => {
+        function handleClickOutside(e) {
+            if (ref.current && !ref.current.contains(e.target)) {
+                setOpen(false);
+            }
+          }
+          
+        document.addEventListener('click', handleClickOutside);
+
+        return () => {
+           document.removeEventListener('click', handleClickOutside);
+          };
+    },[ref,open])
+
     return (
-        <nav className='navbar flex'>
+        <nav className='navbar flex' ref={ref}>
             <div className="nav-center">
                 <div className="nav-header flex">
                     <Link href='/'>
