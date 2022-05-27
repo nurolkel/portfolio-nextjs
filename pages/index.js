@@ -89,89 +89,89 @@ export default function Home({  myInfo, myHobbies, myPortfolio }) {
           <h2 className="text-blue fs-600 letter-spacing-3 padding-top-bottom padding-inline uppercase text-center">My Skills</h2>
         </header>
         <IconGrid className="padding-inline">
-          <div className="card padding-top-bottom padding-inline">
+          <div className="card padding-top-bottom">
             <FaGitAlt className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2">Git</span>
+            <span className="text-light-grey text-center fs-400 letter-spacing-2">Git</span>
           </div>
           <div className="card padding-top-bottom ">
             <FaHtml5 className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">HTML5</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">HTML5</span>
           </div>
-          <div className="card padding-top-bottom padding-inline">
+          <div className="card padding-top-bottom">
             <FaCss3Alt className="icons-1 text-purple" />
-            <span className="d-block  text-light-grey fs-400 letter-spacing-2 uppercase">CSS3</span>
+            <span className="d-block  text-light-grey text-center fs-400 letter-spacing-2 uppercase">CSS3</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiJavascript className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Javascript</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Javascript</span>
           </div>
           <div className="card padding-top-bottom ">
             <FaReact className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">React</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">React</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiGatsby className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Gatsby.js</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Gatsby.js</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiNextdotjs className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Next.js</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Next.js</span>
           </div>
           <div className="card padding-top-bottom ">
             <FaNodeJs className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Node.js</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Node.js</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiTailwindcss className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Tailwind CSS</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Tailwind CSS</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiStyledcomponents className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">CSS-IN-JS</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">CSS-IN-JS</span>
           </div>
           <div className="card padding-top-bottom ">
             <BsBootstrapFill className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Bootstrap 5</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Bootstrap 5</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiWebpack className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Webpack</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Webpack</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiNetlify className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Netlify</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Netlify</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiVercel className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Vercel</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Vercel</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiMongodb className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">MongoDb</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">MongoDb</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiPostgresql className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Postgresql</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Postgresql</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiGraphql className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Graphql</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Graphql</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiFirebase className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Firebase</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Firebase</span>
           </div>
           <div className="card padding-top-bottom ">
             <SiContentful className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Contentful CMS</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Contentful CMS</span>
           </div>
           <div className="card padding-top-bottom ">
             <FaWordpress className="icons-1  text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Wordpress</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Wordpress</span>
           </div>
           <div className="card padding-top-bottom ">
             <FaWix className="icons-1 text-purple" />
-            <span className="d-block text-light-grey fs-400 letter-spacing-2 uppercase">Wix</span>
+            <span className="d-block text-light-grey text-center fs-400 letter-spacing-2 uppercase">Wix</span>
           </div>
         </IconGrid>
         <div className="grid-container padding-inline padding-top-bottom">

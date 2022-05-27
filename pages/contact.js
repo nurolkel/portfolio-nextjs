@@ -11,7 +11,9 @@ const ContactPage = () => {
     const { values, updateValue } = useForm({
         name:'',
         email:'',
-        telephone:''
+        telephone:'',
+        description: '',
+        mapleSyrup:''
     });
    const {
         error,
@@ -44,7 +46,7 @@ const ContactPage = () => {
                     <ReachMe />
                 </div>
             </div>
-            <form onSubmit={submitForm}>
+            <form onSubmit={submitForm} autoComplete="off">
                 <label htmlFor="name" className="text-light-grey d-block">Name
                 <input 
                     type="text" 
@@ -63,6 +65,14 @@ const ContactPage = () => {
                     onChange={updateValue}
                     className="bg-black text-white"
                 /></label>
+                 <input  
+                    type="text"
+                    id="mapleSyrup"
+                    name="mapleSyrup"
+                    value={values.mapleSyrup}
+                    onChange={updateValue}
+                    className="d-none"
+                />
                 <label htmlFor="telephone" className="text-light-grey d-block">Telephone
                 <input 
                     type="tel"
@@ -70,6 +80,16 @@ const ContactPage = () => {
                     name="telephone"
                     value={values.telephone}
                     onChange={updateValue}
+                    className="bg-black text-white"
+                /></label>
+                <label htmlFor="description" className="text-light-grey d-block">Message:
+                <textarea 
+                    value={values.description}
+                    onChange={updateValue}
+                    id="description"
+                    name="description"
+                    cols={15}
+                    rows={6}
                     className="bg-black text-white"
                 /></label>
                 <button role="submit">Submit</button>

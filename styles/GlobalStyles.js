@@ -139,6 +139,10 @@ const GlobalStyles = createGlobalStyle`
         display: block;
     }
 
+    .d-none {
+        display: none;
+    }
+
     .position-relative {
         position: relative;
     }

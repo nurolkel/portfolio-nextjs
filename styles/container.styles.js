@@ -163,7 +163,8 @@ export const ContactContainer = styled.main`
             align-items: center;
             gap: 1rem;
 
-            input {
+            input, 
+            textarea {
                 padding: 0.5rem;
                 border: 1px solid hsl(var(--clr-purple));
 
